@@ -1,0 +1,69 @@
+Project
+ 
+Robot I can tell to paint pictures that other people draw
+ 
+Software A canvas similar to Microsoft Paint, but one that can translate the drawing to commands for the robot to create the piece.
+ 
+Hardware Some sort of robotic arm that can wield some sort of instrument to draw onto a physical canvas.
+ 
+ 
+-Software-
+ 
+Canvas similar to MS Paint
+● Tools to paint like brushes or sprays
+● Needs to be extremely realistic and extremely simple
+● Project in itself (Not the first thing to do)
+ 
+Translate the drawing
+● The program wouldn’t just save the picture of the drawing that the user creates but somehow records each stroke and converts it into commands that will recreate the same stroke by the robot in physical space.
+● Strong synchronization between the tools the user uses to essentially form the commands as they create.
+● Two ideas: Event handlers that would translate as the user is drawing -OR- a compile button that would remember the order which the strokes were made and use some algorithm to create a list of commands for the robot.
+Commands for the robot
+● Accurately create a natural movement
+● Needs to be entertaining
+● Same language as the motor that accepts it.
+- Could possibly be saved in a .txt file and then accessed by the motor application.
+● Depends a lot on Translate the drawing.
+ 
+-Hardware-
+ 
+Robotic Arm
+● Run by an Arduino or Raspberry Pi.
+● Don’t know a lot about this yet but I will look up more guides about it.
+- Socket.io?
+- Stepper motors and drivers? **Look up the one I have**
+- Servo motors and drivers?
+- Look at 3d printing mounts and grippers
+- Youtube guy ILikeToMakeStuff Email him about it?
+**Going to need at least 2 Languages. One for the application and one to run the Robot.
+ 
+Wielding the Drawing Instrument
+● Needs to be stable and consistent.
+● Able to recreate the same results.
+● Style of strokes needs to be consistent with the application.
+● A lot based on the canvas that it uses.
+Physical canvas
+• Start with a dry erase marker on a whiteboard.
+• Ultimately I would want them to be more permanent and worth keeping.
+• NOT GOING TO BE A PRINTER
+• Least technical part of the project but open to a lot of creativity.
+ 
+ 
+Arduino
+ 
+Hardware
+ 
+• Arduino UNO
+• 2 or 3 stepper motors
+• Drivers for each motor
+• Power supply for motors
+• Automated way to receive information
+ 
+2 Parts to Arduino Code
+ 
+Receiving commands from application.
+Controlling Motors
+Wireless? Wi-Fi? Bluetooth? Cable?
+STUDY THIS
+Drivers? Timings? Instructions? Code?
+STUDY THIS
